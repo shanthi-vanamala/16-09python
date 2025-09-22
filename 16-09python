@@ -1,0 +1,52 @@
+#bubblesort descending order
+def bubble_sort_desc(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] < arr[j+1]:   # swap for descending
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+nums = [5, 1, 4, 2, 8]
+print("Descending:", bubble_sort_desc(nums))
+
+#bubblesort for strings(alphabetical order)
+def bubble_sort_strings(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:   # string comparison
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+words = ["banana", "apple", "cherry", "date"]
+print("Alphabetical:", bubble_sort_strings(words))
+
+#bubblesort strings by length
+def bubble_sort_by_length(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if len(arr[j]) > len(arr[j+1]):   # compare lengths
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+words = ["apple", "kiwi", "banana", "cherry"]
+print("By Length:", bubble_sort_by_length(words))
+
+#sorted nested by first element
+def bubble_sort_by_length(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if len(arr[j]) > len(arr[j+1]):   # compare lengths
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+words = ["apple", "kiwi", "banana", "cherry"]
+print("By Length:", bubble_sort_by_length(words))
+
+
+
+
+
